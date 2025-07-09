@@ -1,2 +1,2 @@
 # GusXchange Link in Bio
-Custom background image.
+Super fancy with blink, slide, bounce.

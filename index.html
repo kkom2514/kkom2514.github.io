@@ -5,14 +5,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GusXchange | Grow a Garden</title>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
 <style>
   body {
     background: url('background.png') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Kanit', sans-serif;
     color: #fff;
     text-align: center;
     padding: 40px 20px;
+    overflow-x: hidden;
   }
   img.logo {
     max-width: 150px;
@@ -20,17 +22,21 @@
     margin-bottom: 20px;
     background: rgba(0,0,0,0.5);
     padding: 10px;
+    animation: logoBounce 2s infinite;
   }
   h1 {
     color: #fff;
     margin-bottom: 10px;
-    text-shadow: 0 0 10px #000;
+    font-size: 36px;
+    text-shadow: 0 0 10px #bf5fff, 0 0 20px #bf5fff;
+    animation: slideIn 2s ease-out forwards;
   }
   p {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 30px;
     color: #eee;
-    text-shadow: 0 0 5px #000;
+    text-shadow: 0 0 8px #d48cff, 0 0 12px #bf5fff;
+    animation: blink 2s infinite;
   }
   a.button {
     display: block;
@@ -42,7 +48,7 @@
     color: white;
     text-decoration: none;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 22px;
     transition: all 0.3s;
     box-shadow: 0 0 20px #bf5fff, 0 0 30px #bf5fff, 0 0 40px #bf5fff;
     animation: pulse 2s infinite;
@@ -57,12 +63,24 @@
     50% { box-shadow: 0 0 40px #bf5fff, 0 0 60px #bf5fff, 0 0 80px #bf5fff; }
     100% { box-shadow: 0 0 20px #bf5fff, 0 0 30px #bf5fff, 0 0 40px #bf5fff; }
   }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+  @keyframes slideIn {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  @keyframes logoBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
 </style>
 </head>
 <body>
   <img class="logo" src="logo.jpg" alt="GusXchange Logo">
   <h1>Grow a Garden ซื้อ-ขาย</h1>
-  <p>เริ่มเพียง <strong>9 บาท</strong><br>เติมไว ได้ของชัวร์ 💸</p>
+  <p>ปลอดภัย 100% ชัวร์ 💸</p>
   
   <a class="button" href="https://ezdn.app/pongphop" target="_blank">
     🛒 สั่งซื้อ Grow a Garden
