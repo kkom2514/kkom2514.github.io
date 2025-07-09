@@ -1,2 +1,2 @@
 # GusXchange Link in Bio
-Simple neon dark responsive landing page.
+Glow + pulse neon effect.

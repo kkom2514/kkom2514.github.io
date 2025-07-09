@@ -4,23 +4,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GusXchange | Roblox Grow a Garden</title>
+<title>GusXchange | Grow a Garden</title>
 <style>
   body {
-    background: #000;
+    background: #fff;
     font-family: 'Arial', sans-serif;
-    color: #fff;
+    color: #333;
     text-align: center;
     padding: 40px 20px;
   }
+  img.logo {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
   h1 {
-    color: #39ff14;
+    color: #222;
     margin-bottom: 10px;
   }
   p {
     font-size: 18px;
     margin-bottom: 30px;
-    color: #ddd;
+    color: #555;
   }
   a.button {
     display: block;
@@ -28,43 +33,37 @@
     padding: 15px 30px;
     width: 90%;
     max-width: 320px;
-    background: #111;
-    color: #39ff14;
+    background: linear-gradient(45deg, #bf5fff, #d48cff);
+    color: white;
     text-decoration: none;
-    border: 2px solid #39ff14;
     border-radius: 50px;
     font-size: 20px;
-    transition: all 0.4s;
-    box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14 inset;
+    transition: all 0.3s;
+    box-shadow: 0 0 20px #bf5fff, 0 0 30px #bf5fff, 0 0 40px #bf5fff;
+    animation: pulse 2s infinite;
   }
   a.button:hover {
-    background: #39ff14;
-    color: #000;
-    box-shadow: 0 0 20px #39ff14, 0 0 40px #39ff14 inset;
+    background: linear-gradient(45deg, #d48cff, #bf5fff);
+    box-shadow: 0 0 30px #bf5fff, 0 0 50px #bf5fff, 0 0 70px #bf5fff;
     transform: scale(1.05);
   }
-  .icon {
-    display: inline-block;
-    animation: bounce 1.5s infinite;
-  }
-  @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 20px #bf5fff, 0 0 30px #bf5fff, 0 0 40px #bf5fff; }
+    50% { box-shadow: 0 0 40px #bf5fff, 0 0 60px #bf5fff, 0 0 80px #bf5fff; }
+    100% { box-shadow: 0 0 20px #bf5fff, 0 0 30px #bf5fff, 0 0 40px #bf5fff; }
   }
 </style>
 </head>
 <body>
-  <h1><span class="icon">🎮</span> GusXchange</h1>
-  <p>Roblox Grow a Garden 🌱 เริ่มเพียง <strong>9 บาท</strong><br>เติมไว ได้ของชัวร์ 💸</p>
+  <img class="logo" src="logo.jpg" alt="GusXchange Logo">
+  <h1>Grow a Garden ซื้อ-ขาย</h1>
+  <p>เริ่มเพียง <strong>9 บาท</strong><br>เติมไว ได้ของชัวร์ 💸</p>
   
   <a class="button" href="https://ezdn.app/pongphop" target="_blank">
     🛒 สั่งซื้อ Grow a Garden
   </a>
   <a class="button" href="https://facebook.com/profile.php?id=61577306072405" target="_blank">
     💬 แชท Facebook สอบถาม
-  </a>
-  <a class="button" href="#">
-    🎁 โปรพิเศษ ลูกค้าใหม่ ลดเพิ่ม
   </a>
 </body>
 </html>
