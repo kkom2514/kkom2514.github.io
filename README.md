@@ -1,2 +1,2 @@
-# GusXchange Link in Bio
-Super fancy with blink, slide, bounce.
+# GusXchange Neon Demo
+Static HTML with banner emoji, logo bounce+spin, footer marquee.
