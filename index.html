@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GusXchange | Grow a Garden</title>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -18,60 +18,75 @@
   }
   img.logo {
     max-width: 150px;
+    border-radius: 50%;
     margin-bottom: 20px;
-    animation: bounce 2s infinite, spin 10s linear infinite;
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+    animation: logoBounce 2s infinite;
   }
-  .banner {
-    font-size: 28px;
-    margin-bottom: 30px;
-    text-shadow: 0 0 10px #bf5fff, 0 0 20px #d48cff;
-    animation: pulse 3s infinite;
-  }
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 20px;
+  h1 {
     color: #fff;
-    background: rgba(0,0,0,0.6);
-    padding: 10px 0;
-    overflow: hidden;
+    margin-bottom: 10px;
+    font-size: 36px;
+    text-shadow: 0 0 10px #bf5fff, 0 0 20px #bf5fff;
+    animation: slideIn 2s ease-out forwards;
   }
-  .marquee {
-    display: inline-block;
-    white-space: nowrap;
-    animation: marquee 15s linear infinite;
+  p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #eee;
+    text-shadow: 0 0 8px #d48cff, 0 0 12px #bf5fff;
+    animation: blink 2s infinite;
   }
-  @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+  a.button {
+    display: block;
+    margin: 15px auto;
+    padding: 15px 30px;
+    width: 90%;
+    max-width: 320px;
+    background: linear-gradient(45deg, #bf5fff, #d48cff);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 22px;
+    transition: all 0.3s;
+    box-shadow: 0 0 20px #bf5fff, 0 0 30px #bf5fff, 0 0 40px #bf5fff;
+    animation: pulse 2s infinite;
   }
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  a.button:hover {
+    background: linear-gradient(45deg, #d48cff, #bf5fff);
+    box-shadow: 0 0 30px #bf5fff, 0 0 50px #bf5fff, 0 0 70px #bf5fff;
+    transform: scale(1.05);
   }
   @keyframes pulse {
-    0%, 100% { text-shadow: 0 0 10px #bf5fff, 0 0 20px #d48cff; }
-    50% { text-shadow: 0 0 20px #bf5fff, 0 0 30px #d48cff; }
+    0% { box-shadow: 0 0 20px #bf5fff, 0 0 30px #bf5fff, 0 0 40px #bf5fff; }
+    50% { box-shadow: 0 0 40px #bf5fff, 0 0 60px #bf5fff, 0 0 80px #bf5fff; }
+    100% { box-shadow: 0 0 20px #bf5fff, 0 0 30px #bf5fff, 0 0 40px #bf5fff; }
   }
-  @keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+  @keyframes slideIn {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  @keyframes logoBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
   }
 </style>
 </head>
 <body>
-  <img class="logo" src="logo.png" alt="GusXchange Logo">
-  <div class="banner">
-    🎉🌱🍓🌻 Grow a Garden by GusXchange 🍓🌱✨🎉
-  </div>
-  <div class="products">
-    🐾 Demo สินค้า Grow a Garden จะโชว์ที่นี่
-  </div>
-  <footer>
-    <div class="marquee">
-      ⚡ เติมไว ปลอดภัย 100% ⚡ เติมไว ปลอดภัย 100% ⚡ เติมไว ปลอดภัย 100%
-    </div>
-  </footer>
+  <img class="logo" src="logo.jpg" alt="GusXchange Logo">
+  <h1>Grow a Garden ซื้อ-ขาย</h1>
+  <p>ปลอดภัย 100% ชัวร์ 💸</p>
+  
+  <a class="button" href="https://ezdn.app/pongphop" target="_blank">
+    🛒 สั่งซื้อ Grow a Garden
+  </a>
+  <a class="button" href="https://facebook.com/profile.php?id=61577306072405" target="_blank">
+    💬 แชท Facebook สอบถาม
+  </a>
 </body>
 </html>
